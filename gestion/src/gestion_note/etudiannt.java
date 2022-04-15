@@ -1,15 +1,14 @@
 package gestion_note;
 
-import aiac.gi18.java.complexe.Complexe;
 
-public class etudiannt {
+public class etudiannt   {
 	 private int id;
 	private String nom;
 	private double note;
 	public etudiannt() {
 		this.note =10;
 	}
-	public etudiannt(int id ,string nom) {
+	public etudiannt(int id ,String nom) {
 	    note =10;
 	    this.nom=nom;
 	    this.id=id;
