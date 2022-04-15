@@ -23,9 +23,17 @@ public class etudiannt   {
 		if (! (obj instanceof etudiannt ) ){
 			return false;
 		}
-	return	((etudiann)obj).id==this.id&& ((etudiannt)obj).nom==this.nom;
+	return	((etudiann)obj).id==this.id
 	}
+	
 	@Override
+	public int compareTo(Etudiant e) {
+		if(this.note==e.note) return 0;
+		if(this.note>e.note) return 1;
+		return -1;
+		
+	}
+
 		
 	}
 	
